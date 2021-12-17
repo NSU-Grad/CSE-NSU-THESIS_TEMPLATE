@@ -43,6 +43,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#Abou">CONTACT</a>
             </li>
+            <li class="nav-item">
+              <a  type="button" class="nav-link" data-toggle="modal" data-target="#myModal"  style="color:#FF0000;" href="#myModal">DISCLAIMER</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -70,7 +73,7 @@
         <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
                 <div class= "embed-responsive embed-responsive-16by9">
-                  <iframe width="auto" height="315"  src="https://www.youtube.com/embed/x8A-oG3fBYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="auto" height="315"  src="https://www.youtube.com/embed/xL5KrmsppDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">MS Word Tutorial</h3>
@@ -81,7 +84,7 @@
         <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe width="auto" height="315" src="https://www.youtube.com/embed/x8A-oG3fBYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="auto" height="315" src="https://www.youtube.com/embed/jx1E_6wDJgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">Overleaf Tutorial</h3>
@@ -91,9 +94,9 @@
          <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe width="auto" height="315" src="https://www.youtube.com/embed/x8A-oG3fBYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="auto" height="315" src="https://www.youtube.com/embed/tRbL-A7liCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="card-body">
+                <div id="mik" class="card-body">
                   <h3 class="card-title">MiKTex Tutorial</h3>
                 </div>
               </div>
@@ -117,7 +120,7 @@
               
               <div class="text text-center">
                 <h3 class="pt-1 m-0">MS WORD</h3>
-                <a href="my-program.zip">Download Template</a>
+                <a href="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\NSU_Thesis_Template.docx" download="NSU_THESIS_TEMPLATE">Download MS Template</a>
               </div>
             </div>
           </div>
@@ -127,8 +130,8 @@
             <div class="d-flex flex-row justify-content-center">
               
               <div class="text text-center">
-                <h3 class="pt-1 m-0">Online/Local Editor</h3>
-                <a href="my-program.zip">Download as Zip</a>
+                <h3 class="pt-1 m-0">Online/Local Editor</h3> 
+                <a href="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\NSU Thesis Template.zip" download="NSU_THESIS_TEMPLATE">Download as Zip</a>
               </div>
             </div>
           </div>
@@ -136,7 +139,29 @@
       </div>
     </section>
 
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Disclaimer</h4>
+        </div>
+        <div class="modal-body">
+          <p>We may use copyrighted material that has not always been expressly authorized by the owner of the copyright. We are making this material available for criticism, commentary, news reporting, teaching, scholarship, and research.</p>
+          <p>We believe this is a "fair use" of any such copyrighted material, as defined in Section 107 of the United States Copyright Act.</p>
+          <p>You must obtain permission from the copyright owner if you wish to use copyrighted material from the website for purposes other than fair use.</p>
+          <p>If you have any questions about this Disclaimer, you can contact us by visiting this page on our website:</p>
 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
     <!-- Section 4 -->
     
@@ -148,102 +173,87 @@
       <div class="questions-container">
         <div class="content-container">
           <div class="faq-header">
-            <h3>How do I purchase a membership?</h3>
+            <h3>Why is my reference not working in Texmaker?</h3>
             <span class="open active">+</span>
             <span class="close">-</span>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              veniam!
+              Please ensure that your quick build command from Options>Configure Texmaker is configured as shown in the screenshot below. Then, click the run button to begin compiling and generating the PDF. <br> Watch the MikTEx <a href="#tutorial">tutorial</a> for more information. </br>
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              voluptatem voluptatibus temporibus nemo amet tempore aperiam
-              pariatur laboriosam qui vel!
+              <img style='height: 100%; width: 100%; object-fit: cover' class= "center" src="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\Nsu-Thesis-Template-Website\assets\quick-build.png" alt="Quick Build Command">
             </p>
           </div>
         </div>
         <div class="content-container">
           <div class="faq-header">
-            <h3>How do I purchase a membership?</h3>
+            <h3>How do you cite in BibTeX?</h3>
             <span class="open active">+</span>
             <span class="close">-</span>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              veniam!
+              Google Scholar provides automated Bibtex references. Find the article, then go to "cite" and select BibTex from the option below. Copy and paste the BibTex  into your ref.bib file. For in-text citation, go to your desired location and type \cite{label}, where "label" is the label attached to the BibTex you copied (underlined in red as shown below). Follow the highlighted steps as illustrated. <br> Watch the Overleaf <a href="#tutorial">tutorial</a> for more information. </br>
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              voluptatem voluptatibus temporibus nemo amet tempore aperiam
-              pariatur laboriosam qui vel!
+             <img style='height: 100%; width: 100%; object-fit: cover' class= "center" src="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\Nsu-Thesis-Template-Website\assets\cite.png" alt="citation"> </p>
+
+             <p> <img style='height: 100%; width: 100%; object-fit: cover' class= "center" src="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\Nsu-Thesis-Template-Website\assets\bibTex.png" alt="BibTex"> </p>
+
+             <p> <img style='height: 100%; width: 100%; object-fit: cover' class= "center" src="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\Nsu-Thesis-Template-Website\assets\ref.png" alt="Reference"> </p>
             </p>
           </div>
         </div>
         <div class="content-container">
           <div class="faq-header">
-            <h3>How do I purchase a membership?</h3>
+            <h3>How do I add new chapters to Overleaf/TexMaker?</h3>
             <span class="open active">+</span>
             <span class="close">-</span>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              veniam!
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              voluptatem voluptatibus temporibus nemo amet tempore aperiam
-              pariatur laboriosam qui vel!
+              Make a new folder for the new chapter. Make a new file for the new chapter within it. After that, in your main.tex file, inside the "chapter " section, type \include{your new chapter name} command. <br> Watch the Overleaf <a href="#tutorial">tutorial</a> for more information. </br>
             </p>
           </div>
         </div>
         <div class="content-container">
           <div class="faq-header">
-            <h3>How to cancel the subscription?</h3>
+            <h3>"This compile didn’t produce a PDF", what should I do?</h3>
             <span class="open active">+</span>
             <span class="close">-</span>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              veniam!
+              Make sure you have set your Main document from the Menu to main.tex file as shown below. <br> Watch the Overleaf <a href="#tutorial">tutorial</a> for more information. </br> 
             </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              voluptatem voluptatibus temporibus nemo amet tempore aperiam
-              pariatur laboriosam qui vel!
-            </p>
+            <p><img style='height: 100%; width: 100%; object-fit: cover' class= "center" src="C:\Users\le\Desktop\NSU THESIS FINAL VERSION\Nsu-Thesis-Template-Website\assets\main.png" alt="Main.tex file"></p>
           </div>
         </div>
         <div class="content-container">
           <div class="faq-header">
-            <h3>How do I purchase a membership?</h3>
+            <h3>Where can I add an abstract, student names and IDS, as well as change the date, title, etc.?</h3>
             <span class="open active">+</span>
             <span class="close">-</span>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              veniam!
-            </p>
+              To add an abstract, navigate to the prologue folder and edit the abstarct.tex file with your texts. </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              voluptatem voluptatibus temporibus nemo amet tempore aperiam
-              pariatur laboriosam qui vel!
+                Edit the information.tex file to add student names and IDs, supervisor names, and to change the title name.
             </p>
+            <p>
+              Change the date by going to the core folder and editing the title.tex file.
+            </p>
+            
           </div>
         </div>
       </div>
@@ -256,9 +266,8 @@
         <div class="col-md-12 col-sm-12">
           
           <h4 class="text-light">Contact Us</h4>
-          <p class="text-muted">shahriar.karim@northsouth.edu
-          <br>salma.hai@northsouth.edu
-          </br></p>
+          <p class="text-muted">nsu.thesis@gmail.com
+          </p>
           <p class="text-muted">
             <span> NSUgrad - 2021 </span>
           </p>
