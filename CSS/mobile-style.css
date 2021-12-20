@@ -7,6 +7,13 @@
     width: initial;
     height: initial;
   }
+
+  header .row .col-md-5 {
+  padding: 8vmin;
+}
+
+
+
   .section-2 .cover {
     background-position: -25vmin -10vmin;
   }
