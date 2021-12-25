@@ -496,5 +496,18 @@ footer .column i + i {
 
 
 .carousel-caption .flex-center{
-  padding: 8vmin;
+  padding: 12vmin 8vmin;
+}
+
+.carousel-caption .flex-center a{
+  transition: ease-out 0.3s;
+  outline: none;
+
+}
+
+.carousel-caption .flex-center a:hover{
+  box-shadow: inset 400px 0 0 0 #2C5364;
+  color: ;
+  cursor: pointer;
+  
 }
