@@ -1,3 +1,26 @@
+
+
+<?php 
+function get_download_count($file=null){
+  $counters = './counters/';
+  if($file == null) return 0;
+  $count = 0;
+  if(file_exists($counters.md5($file).'_counter.txt')){
+    $fp = fopen($counters.md5($file).'_counter.txt', "r");
+    $count = fread($fp, 1024);
+    fclose($fp);
+  }else{
+    $fp = fopen($counters.md5($file).'_counter.txt', "w+");
+    fwrite($fp, $count);
+    fclose($fp);
+  }
+  return $count;
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,7 +154,12 @@
               
               <div class="text text-center">
                 <h3 class="pt-1 m-0">MS WORD</h3>
-                <a href="Templates\NSU_Thesis_Template.docx" download="NSU_THESIS_TEMPLATE">Download MS Template</a>
+
+                 <a href="./download.php?file=NSU_Thesis_Template.docx">Download MS Template</a> <p style=" margin-bottom: 0rem; color: gray; font-size: 1.5vmin">Total downlaods: <?php echo get_download_count('NSU_Thesis_Template.docx');?></p>
+                
+                 
+                    
+                  
               </div>
             </div>
           </div>
@@ -142,7 +170,9 @@
               
               <div class="text text-center">
                 <h3 class="pt-1 m-0">Online/Local Editor (LaTex Format)</h3> 
-                <a href="Templates\NSU Thesis Template.zip" download="NSU_THESIS_TEMPLATE">Download as Zip</a>
+
+                <a href="./download.php?file=NSU Thesis Template.zip">Download as Zip</a> <p style="margin-bottom: 0rem; color: gray; font-size: 1.5vmin">Total downloads: <?php echo get_download_count('NSU Thesis Template.zip');?></p>
+
               </div>
             </div>
           </div>
