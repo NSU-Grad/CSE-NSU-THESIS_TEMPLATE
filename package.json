@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 CSS/Style.css dist/Style.css"
-  },
-  "dependencies": {
-    "node-sass": "^4.12.0"
-  }
-}
